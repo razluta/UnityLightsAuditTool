@@ -14,6 +14,7 @@ namespace razluta
         {
             var window = GetWindow<UnityLightsAuditToolWindow>();
             window.titleContent = new GUIContent("Lights Audit Tool");
+            window.minSize = new Vector2(1000, 600);
             window.Show();
         }
 
@@ -23,8 +24,10 @@ namespace razluta
             var root = rootVisualElement;
             rootVisualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/UnityLightsAuditTool/Editor/Resources/UnityLightsAuditToolRoot.uxml");
             rootVisualTreeAsset.CloneTree(root);
+            
+            // Create a table
+            
         }
     }
-#endif
-
 }
+#endif

@@ -84,3 +84,43 @@ VisualElement {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
+
+.subtitle {
+    -unity-font-style: italic;
+    -unity-text-align: upper-center;
+}
+
+.table_outline {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-left-color: rgba(0, 0, 0, 255);
+    border-right-color: rgba(0, 0, 0, 255);
+    border-top-color: rgba(0, 0, 0, 255);
+    border-bottom-color: rgba(0, 0, 0, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    flex-grow: 1;
+}
+
+.toggle {
+    margin-left: 20px;
+    margin-right: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.table_titles {
+    -unity-text-align: upper-center;
+}
+
+.table_header_background {
+    background-color: rgba(46, 46, 46, 255);
+}

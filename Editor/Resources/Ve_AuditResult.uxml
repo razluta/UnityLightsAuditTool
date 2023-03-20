@@ -1,0 +1,31 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Button display-tooltip-when-elided="true" name="Bt_AuditResult" style="margin-left: 2px; margin-right: 2px; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; border-left-color: rgb(115, 115, 115); border-right-color: rgb(115, 115, 115); border-top-color: rgb(115, 115, 115); border-bottom-color: rgb(115, 115, 115); border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; background-color: rgba(88, 88, 88, 0); flex-direction: row;">
+        <ui:VisualElement name="Ve_Ar_Name" class="table_outline" style="flex-grow: 1; flex-shrink: 0; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; border-left-color: rgb(38, 38, 38); border-right-color: rgb(38, 38, 38); border-top-color: rgb(38, 38, 38); border-bottom-color: rgb(38, 38, 38); flex-basis: 18%;">
+            <ui:Label text="Light Name" display-tooltip-when-elided="true" name="Lb_Ar_Name" class="table_titles" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Ve_Ar_Type" class="table_outline" style="flex-grow: 1; flex-shrink: 0; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; border-left-color: rgb(38, 38, 38); border-right-color: rgb(38, 38, 38); border-top-color: rgb(38, 38, 38); border-bottom-color: rgb(38, 38, 38); flex-basis: 10%;">
+            <ui:Label text="Point" display-tooltip-when-elided="true" name="Lb_Ar_Type" class="table_titles" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Ve_Ar_Mode" class="table_outline" style="flex-grow: 1; flex-shrink: 0; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; border-left-color: rgb(38, 38, 38); border-right-color: rgb(38, 38, 38); border-top-color: rgb(38, 38, 38); border-bottom-color: rgb(38, 38, 38); flex-basis: 10%;">
+            <ui:Label text="Realtime" display-tooltip-when-elided="true" name="Lb_Ar_Mode" class="table_titles" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Ve_Ar_Range" class="table_outline" style="flex-grow: 1; flex-shrink: 0; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; border-left-color: rgb(38, 38, 38); border-right-color: rgb(38, 38, 38); border-top-color: rgb(38, 38, 38); border-bottom-color: rgb(38, 38, 38); flex-basis: 7%;">
+            <ui:Label text="10" display-tooltip-when-elided="true" name="Lb_Ar_Range" class="table_titles" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Ve_Ar_Intensity" class="table_outline" style="flex-grow: 1; flex-shrink: 0; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; border-left-color: rgb(38, 38, 38); border-right-color: rgb(38, 38, 38); border-top-color: rgb(38, 38, 38); border-bottom-color: rgb(38, 38, 38); flex-basis: 7%;">
+            <ui:Label text="1.0" display-tooltip-when-elided="true" name="Lb_Ar_Intensity" class="table_titles" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Ve_Ar_IndirectMultiplier" class="table_outline" style="flex-grow: 1; flex-shrink: 0; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; border-left-color: rgb(38, 38, 38); border-right-color: rgb(38, 38, 38); border-top-color: rgb(38, 38, 38); border-bottom-color: rgb(38, 38, 38); flex-basis: 12%;">
+            <ui:Label text="1.0" display-tooltip-when-elided="true" name="Lb_Ar_IndirectMultiplier" class="table_titles" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Ve_Ar_ShadowType" class="table_outline" style="flex-grow: 1; flex-shrink: 0; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; border-left-color: rgb(38, 38, 38); border-right-color: rgb(38, 38, 38); border-top-color: rgb(38, 38, 38); border-bottom-color: rgb(38, 38, 38); flex-basis: 10%;">
+            <ui:Label text="No Shadows" display-tooltip-when-elided="true" name="Lb_Ar_ShadowType" class="table_titles" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Ve_Ar_RenderMode" class="table_outline" style="flex-grow: 1; flex-shrink: 0; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; border-left-color: rgb(38, 38, 38); border-right-color: rgb(38, 38, 38); border-top-color: rgb(38, 38, 38); border-bottom-color: rgb(38, 38, 38); flex-basis: 13%;">
+            <ui:Label text="Not Important" display-tooltip-when-elided="true" name="Lb_Ar_RenderMode" class="table_titles" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Ve_Ar_CullingMask" class="table_outline" style="flex-grow: 1; flex-shrink: 0; margin-top: 0; margin-left: 0; margin-right: 0; margin-bottom: 0; border-left-color: rgb(38, 38, 38); border-right-color: rgb(38, 38, 38); border-top-color: rgb(38, 38, 38); border-bottom-color: rgb(38, 38, 38); flex-basis: 13%;">
+            <ui:Label text="Everything" display-tooltip-when-elided="true" name="Lb_Ar_CullingMask" class="table_titles" />
+        </ui:VisualElement>
+    </ui:Button>
+</ui:UXML>
