@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UnityLightsAuditTool/Editor/Resources/UnityLightsAuditTool.uss?fileID=7433441132597879392&amp;guid=1253f34beebbf1b459b2a3186a3abba7&amp;type=3#UnityLightsAuditTool" />
+    <ui:VisualElement name="Ve_Title" class="ve_sections box_outline">
+        <ui:Label text="Lights Audit Tool" display-tooltip-when-elided="true" class="title" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Ve_Instructions" class="box_outline_weak">
+        <ui:Label text="Press &apos;Audit Scene&apos; to collect light data from your active scene." display-tooltip-when-elided="true" class="instructions" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Ve_Buttons" class="ve_sections" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+        <ui:Button text="Audit Scene" display-tooltip-when-elided="true" name="Bt_AuditScene" class="button" />
+    </ui:VisualElement>
+    <ui:VisualElement name="Ve_Results" class="ve_sections box_outline_weak" />
+</ui:UXML>

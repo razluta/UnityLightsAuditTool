@@ -1,0 +1,86 @@
+VisualElement {
+}
+
+.title {
+    -unity-font-style: bold;
+    -unity-text-align: upper-center;
+}
+
+.ve_sections {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.instructions {
+    -unity-font-style: italic;
+    font-size: 10px;
+    -unity-text-align: upper-center;
+    color: rgba(210, 210, 210, 0.51);
+}
+
+.box_outline {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgba(0, 0, 0, 255);
+    border-right-color: rgba(0, 0, 0, 255);
+    border-top-color: rgba(0, 0, 0, 255);
+    border-bottom-color: rgba(0, 0, 0, 255);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.box_outline_weak {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-left-color: rgba(0, 0, 0, 0.47);
+    border-right-color: rgba(0, 0, 0, 0.47);
+    border-top-color: rgba(0, 0, 0, 0.47);
+    border-bottom-color: rgba(0, 0, 0, 0.47);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.button {
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
