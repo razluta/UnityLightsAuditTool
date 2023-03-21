@@ -1,5 +1,4 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:Template name="Ve_AuditResult" src="project://database/Assets/UnityLightsAuditTool/Editor/Resources/Ve_AuditResult.uxml?fileID=9197481963319205126&amp;guid=b45843b2d1c4d824785378c7c8cc66b9&amp;type=3#Ve_AuditResult" />
     <Style src="project://database/Assets/UnityLightsAuditTool/Editor/Resources/UnityLightsAuditTool.uss?fileID=7433441132597879392&amp;guid=1253f34beebbf1b459b2a3186a3abba7&amp;type=3#UnityLightsAuditTool" />
     <ui:VisualElement name="Ve_Title" class="ve_sections box_outline" style="flex-shrink: 0;">
         <ui:Label text="Lights Audit Tool" display-tooltip-when-elided="true" class="title" />
@@ -10,18 +9,18 @@
     <ui:VisualElement name="Ve_Buttons" class="box_outline_weak" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; flex-shrink: 0;">
         <ui:VisualElement name="Ve_Parameters" class="box_outline_weak">
             <ui:Label text="Parameters" display-tooltip-when-elided="true" class="subtitle" />
-            <ui:TextField picking-mode="Ignore" label="Humanoid height (m)" value="1.8" text="1.8" name="TF_HumanoidHeight" />
-            <ui:Label text="Include light types" display-tooltip-when-elided="true" style="margin-left: 4px;" />
+            <ui:Label text="Include lightmap bake types:" display-tooltip-when-elided="true" style="margin-left: 4px;" />
             <ui:Toggle label="Realtime" name="Tg_Realtime" value="true" class="toggle" />
             <ui:Toggle label="Mixed" name="Tg_Mixed" value="false" class="toggle" />
             <ui:Toggle label="Baked" name="Tg_Baked" value="false" class="toggle" />
             <ui:Button text="Reset parameters" display-tooltip-when-elided="true" name="Bt_ResetParameters" class="button" />
         </ui:VisualElement>
         <ui:Button text="Audit scene" display-tooltip-when-elided="true" name="Bt_AuditScene" class="button" />
+        <ui:Button text="Clear audit results" display-tooltip-when-elided="true" name="Bt_ClearResults" class="button" />
     </ui:VisualElement>
     <ui:VisualElement name="Ve_Output" class="box_outline_weak" style="flex-shrink: 1; flex-grow: 1;">
         <ui:VisualElement name="Ve_Results" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; flex-shrink: 1; flex-grow: 1;">
-            <ui:VisualElement name="Ve_TableHeader" class="ve_sections" style="flex-direction: row; margin-bottom: 0; flex-shrink: 0; border-left-color: rgba(0, 0, 0, 255); border-right-color: rgba(0, 0, 0, 255); border-top-color: rgba(0, 0, 0, 255); border-bottom-color: rgba(0, 0, 0, 255); border-bottom-width: 2px;">
+            <ui:VisualElement name="Ve_TableHeader" class="ve_sections" style="flex-direction: row; margin-bottom: 0; flex-shrink: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 2px;">
                 <ui:VisualElement name="Ve_TableColumn_Name" class="table_outline table_header_background" style="flex-grow: 0; flex-shrink: 0; margin-bottom: 0; flex-basis: 17.87%;">
                     <ui:Label text="Name" display-tooltip-when-elided="true" name="Lb_TableColumn_Name" class="table_titles" />
                 </ui:VisualElement>
@@ -51,9 +50,7 @@
                 </ui:VisualElement>
                 <ui:VisualElement name="Ve_TableColumn_Scroll" class="table_outline table_header_background" style="flex-shrink: 0; margin-bottom: 0; flex-basis: 1.35%;" />
             </ui:VisualElement>
-            <ui:ScrollView name="Sv_Results" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="AlwaysVisible" style="flex-shrink: 1; flex-grow: 1;">
-                <ui:Instance template="Ve_AuditResult" name="Ve_AuditResult" />
-            </ui:ScrollView>
+            <ui:ScrollView name="Sv_Results" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="AlwaysVisible" style="flex-shrink: 1; flex-grow: 1;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
