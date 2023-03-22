@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -43,9 +44,18 @@ namespace UnityLightsAuditTool.Editor
             _resultsSv = rootVisualElement.Q<ScrollView>("Sv_Results");
             
             // Define behaviour
-            // _resetParametersBt.clickable.clicked += () => Something();
+            _resetParametersBt.clickable.clicked += () => ResetParameters();
             _auditSceneBt.clickable.clicked += () => AuditScene();
             _clearAuditResultsBt.clickable.clicked += () => ClearResultsVisualElement();
+        }
+
+        private void ResetParameters()
+        {
+            LightAuditorParameters lightAuditorParameters = new LightAuditorParameters();
+            lightAuditorParameters.Reset();
+            _realtimeTg.value = lightAuditorParameters.IsRealtime;
+            _mixedTg.value = lightAuditorParameters.IsMixed;
+            _bakedTg.value = lightAuditorParameters.IsBaked;
         }
 
         private void AuditScene()
@@ -53,7 +63,6 @@ namespace UnityLightsAuditTool.Editor
             // Collect UI information
             LightAuditorParameters lightAuditorParameters = new LightAuditorParameters();
             lightAuditorParameters.Reset();
-            // lightAuditorParameters.HumanoidHeight = 
             lightAuditorParameters.IsRealtime = _realtimeTg.value;
             lightAuditorParameters.IsMixed = _mixedTg.value;
             lightAuditorParameters.IsBaked = _bakedTg.value;
@@ -93,12 +102,28 @@ namespace UnityLightsAuditTool.Editor
                 // Query the visual element pieces
                 var auditResultBt = rowAuditResultVe.Q<Button>("Bt_AuditResult");
                 var lightNameLb = rowAuditResultVe.Q<Label>("Lb_Ar_Name");
+                var lightTypeLb = rowAuditResultVe.Q<Label>("Lb_Ar_Type");
+                var lightBakeModeLb = rowAuditResultVe.Q<Label>("Lb_Ar_Mode");
+                var lightRangeLb = rowAuditResultVe.Q<Label>("Lb_Ar_Range");
+                var lightIntensityLb = rowAuditResultVe.Q<Label>("Lb_Ar_Intensity");
+                var lightIndirectMultLb = rowAuditResultVe.Q<Label>("Lb_Ar_IndirectMultiplier");
+                var lightShadowTypeLb = rowAuditResultVe.Q<Label>("Lb_Ar_ShadowType");
+                var lightRenderModeLb = rowAuditResultVe.Q<Label>("Lb_Ar_RenderMode");
+                var lightCullingMaskLb = rowAuditResultVe.Q<Label>("Lb_Ar_CullingMask");
 
                 // Define behavior
                 auditResultBt.clickable.clicked += () => EditorGUIUtility.PingObject(light);
                 
                 // Update the row based on the light info
                 lightNameLb.text = light.name;
+                lightTypeLb.text = light.type.ToString();
+                lightBakeModeLb.text = light.lightmapBakeType.ToString();
+                lightRangeLb.text = light.range.ToString(CultureInfo.InvariantCulture);
+                lightIntensityLb.text = light.intensity.ToString(CultureInfo.InvariantCulture);
+                lightIndirectMultLb.text = light.bounceIntensity.ToString(CultureInfo.InvariantCulture);
+                lightShadowTypeLb.text = light.shadows.ToString();
+                lightRenderModeLb.text = light.renderMode.ToString();
+                lightCullingMaskLb.text = light.cullingMask.ToString();
 
                 // Add the row to the container
                 _resultsSv.contentContainer.Add(rowAuditResultVe);
