@@ -22,31 +22,31 @@
         <ui:VisualElement name="Ve_Results" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; flex-shrink: 1; flex-grow: 1;">
             <ui:VisualElement name="Ve_TableHeader" class="ve_sections" style="flex-direction: row; margin-bottom: 0; flex-shrink: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 2px;">
                 <ui:VisualElement name="Ve_TableColumn_Name" class="table_outline table_header_background" style="flex-grow: 0; flex-shrink: 0; margin-bottom: 0; flex-basis: 17.87%;">
-                    <ui:Label text="Name" display-tooltip-when-elided="true" name="Lb_TableColumn_Name" class="table_titles" />
+                    <ui:Button text="↓ Name ↑" display-tooltip-when-elided="true" name="Bt_TableColumn_Name" class="invisible_button" style="flex-grow: 1;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="Ve_TableColumn_Type" class="table_outline table_header_background" style="flex-shrink: 0; margin-bottom: 0; flex-basis: 10%;">
-                    <ui:Label text="Type" display-tooltip-when-elided="true" name="Lb_TableColumn_Type" class="table_titles" />
+                    <ui:Button text="↓ Type ↑" display-tooltip-when-elided="true" name="Bt_TableColumn_Type" class="invisible_button" style="flex-grow: 1;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="Ve_TableColumn_Mode" class="table_outline table_header_background" style="margin-bottom: 0; flex-basis: 9.87%;">
-                    <ui:Label text="Mode" display-tooltip-when-elided="true" name="Lb_TableColumn_Mode" class="table_titles" />
+                    <ui:Button text="↓ Mode ↑" display-tooltip-when-elided="true" name="Bt_TableColumn_Mode" class="invisible_button" style="flex-grow: 1;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="Ve_TableColumn_Range" class="table_outline table_header_background" style="margin-bottom: 0; flex-basis: 6.87%;">
-                    <ui:Label text="Range" display-tooltip-when-elided="true" name="Lb_TableColumn_Range" class="table_titles" />
+                    <ui:Button text="↓ Range ↑" display-tooltip-when-elided="true" name="Bt_TableColumn_Range" class="invisible_button" style="flex-grow: 1;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="Ve_TableColumn_Intensity" class="table_outline table_header_background" style="margin-bottom: 0; flex-basis: 6.87%;">
-                    <ui:Label text="Intensity" display-tooltip-when-elided="true" name="Lb_TableColumn_Intensity" class="table_titles" />
+                    <ui:Button text="↓ Intensity ↑" display-tooltip-when-elided="true" name="Bt_TableColumn_Intensity" class="invisible_button" style="flex-grow: 1;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="Ve_TableColumn_IndirectMultiplier" class="table_outline table_header_background" style="flex-shrink: 0; margin-bottom: 0; flex-basis: 11.87%; flex-grow: 0;">
-                    <ui:Label text="Indirect Mult." display-tooltip-when-elided="true" name="Lb_TableColumn_IndirectMultiplier" class="table_titles" />
+                    <ui:Button text="↓ Indirect Mult. ↑" display-tooltip-when-elided="true" name="Bt_TableColumn_IndirectMultiplier" class="invisible_button" style="flex-grow: 1;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="Ve_TableColumn_ShadowType" class="table_outline table_header_background" style="flex-shrink: 0; margin-bottom: 0; flex-basis: 9.87%;">
-                    <ui:Label text="Shadow Type" display-tooltip-when-elided="true" name="Lb_TableColumn_ShadowType" class="table_titles" />
+                    <ui:Button text="↓ Shadow Type ↑" display-tooltip-when-elided="true" name="Bt_TableColumn_ShadowType" class="invisible_button" style="flex-grow: 1;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="Ve_TableColumn_RenderMode" class="table_outline table_header_background" style="flex-shrink: 0; margin-bottom: 0; flex-basis: 12.87%;">
-                    <ui:Label text="Render Mode" display-tooltip-when-elided="true" name="Lb_TableColumn_RenderMode" class="table_titles" />
+                    <ui:Button text="↓ Render Mode ↑" display-tooltip-when-elided="true" name="Bt_TableColumn_RenderMode" class="invisible_button" style="flex-grow: 1;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="Ve_TableColumn_CullingMask" class="table_outline table_header_background" style="flex-shrink: 0; margin-bottom: 0; flex-basis: 13%;">
-                    <ui:Label text="Culling Mask" display-tooltip-when-elided="true" name="Lb_TableColumn_CullingMask" class="table_titles" />
+                    <ui:Button text="↓ Culling Mask ↑" display-tooltip-when-elided="true" name="Bt_TableColumn_CullingMask" class="invisible_button" style="flex-grow: 1;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="Ve_TableColumn_Scroll" class="table_outline table_header_background" style="flex-shrink: 0; margin-bottom: 0; flex-basis: 1.35%;" />
             </ui:VisualElement>

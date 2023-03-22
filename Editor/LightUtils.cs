@@ -27,4 +27,17 @@ namespace UnityLightsAuditTool.Editor
             IsBaked = IsBakedDefault;
         }
     }
+
+    public enum LightSortingOption
+    {
+        Name,
+        Type,
+        Mode,
+        Range,
+        Intensity,
+        IndirectMultiplier,
+        ShadowType,
+        RenderMode,
+        CullingMask
+    }
 }
