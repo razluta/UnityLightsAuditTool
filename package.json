@@ -1,6 +1,6 @@
 {
   "name": "com.razluta.unitylightsaudittool",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "displayName": "Unity Lights Audit Tool",
   "description": "# Unity Lights Audit Tool [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://mit-license.org)\n\nThis repository is a Unity Editor tool for auditing all the lights in your Unity scene(s).",
   "author": {
