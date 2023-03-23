@@ -11,11 +11,15 @@ The tool has been verified on the following versions of Unity:
 
 The tool is a utility for Unity game developers that helps analyze, sort and display data about all the lights in the scene(s).
 
+*  *  *  *  *
+
 ## Features
 
 * Collect and display all lights in a scene
 * Sort (toggle ascending/descending by clicking on the collumn title) lights based on different properties (type, range, intensity, etc.)
 * Easily identify lights causing issues or impacting performance (due to size, shadow quality, etc)
+
+*  *  *  *  *
 
 ## Installation
 
@@ -37,6 +41,17 @@ To use the Unity Lights Auditor Tool in your Unity project, simply:
 ```
 ### Option C) Add the repository to the Unity Package Manager using the Package Manager dropdown.
 The repository is at: https://github.com/razluta/UnityLightsAuditTool.git
+
+*  *  *  *  *
+
+## Using the tool
+
+To start using the tool, go to: (Menu bar) Raz's Tools > Lights Audit Tool.
+The functionality is as follows:
+* the "Reset parameters" button will revert the tool to only filter for Realtime lights
+* the "Audit scene" button will search the scene for lights and by default arrange them in descending order of range magnitude (bigger lights at the top)
+* the "Clear audit results" will scrap the current search and clear the UI
+* each of the column headers (Name, Type, etc) will toggle ascending/descending sorting of the lights based on that parameter (by name from A-Z or flipped, by Intensity from 0 going up to the highest intensity or backwards).
 
 *  *  *  *  *
 
