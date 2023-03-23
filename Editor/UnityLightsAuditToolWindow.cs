@@ -49,6 +49,10 @@ namespace UnityLightsAuditTool.Editor
         {
             // Load and clone the window structure
             rootVisualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/UnityLightsAuditTool/Editor/Resources/UnityLightsAuditToolRoot.uxml");
+            if (rootVisualTreeAsset == null)
+            {
+                rootVisualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/UnityLightsAuditTool/Editor/Resources/UnityLightsAuditToolRoot.uxml");
+            }
             rootVisualTreeAsset.CloneTree(rootVisualElement);
             
             // Find / query elements
@@ -134,6 +138,10 @@ namespace UnityLightsAuditTool.Editor
             _lights = validLights.ToArray();
 
             VisualTreeAsset rowAuditResult = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/UnityLightsAuditTool/Editor/Resources/Ve_AuditResult.uxml");
+            if (rowAuditResult == null)
+            {
+                rowAuditResult = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/UnityLightsAuditTool/Editor/Resources/Ve_AuditResult.uxml");
+            }
             foreach (var light in _lights)
             {
                 // Clone the visual element
