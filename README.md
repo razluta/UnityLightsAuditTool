@@ -52,6 +52,7 @@ The functionality is as follows:
 * the "Audit scene" button will search the scene for lights and by default arrange them in descending order of range magnitude (bigger lights at the top)
 * the "Clear audit results" will scrap the current search and clear the UI
 * each of the column headers (Name, Type, etc) will toggle ascending/descending sorting of the lights based on that parameter (by name from A-Z or flipped, by Intensity from 0 going up to the highest intensity or backwards).
+* clicking on any light in the list will ping and select the light in the scene
 
 *  *  *  *  *
 
