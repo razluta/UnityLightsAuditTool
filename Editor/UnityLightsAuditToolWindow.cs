@@ -51,7 +51,7 @@ namespace UnityLightsAuditTool.Editor
             rootVisualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/UnityLightsAuditTool/Editor/Resources/UnityLightsAuditToolRoot.uxml");
             if (rootVisualTreeAsset == null)
             {
-                rootVisualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/UnityLightsAuditTool/Editor/Resources/UnityLightsAuditToolRoot.uxml");
+                rootVisualTreeAsset = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/Unity Lights Audit Tool/Editor/Resources/UnityLightsAuditToolRoot.uxml");
             }
             rootVisualTreeAsset.CloneTree(rootVisualElement);
             
@@ -140,7 +140,7 @@ namespace UnityLightsAuditTool.Editor
             VisualTreeAsset rowAuditResult = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/UnityLightsAuditTool/Editor/Resources/Ve_AuditResult.uxml");
             if (rowAuditResult == null)
             {
-                rowAuditResult = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/UnityLightsAuditTool/Editor/Resources/Ve_AuditResult.uxml");
+                rowAuditResult = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Packages/Unity Lights Audit Tool/Editor/Resources/Ve_AuditResult.uxml");
             }
             foreach (var light in _lights)
             {
