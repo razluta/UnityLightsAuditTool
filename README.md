@@ -5,7 +5,7 @@ This repository is a Unity Editor tool for auditing all the lights in your Unity
 ![](/Screenshots/UnityLightsAuditTool_screenshot01.png)
 
 The tool has been verified on the following versions of Unity:
-- 2021.3
+- 2021.3 (LTS)
 
 *  *  *  *  *
 
