@@ -55,6 +55,14 @@ namespace UnityLightsAuditTool.Editor
             }
             rootVisualTreeAsset.CloneTree(rootVisualElement);
             
+            // Re-load and apply the style
+            var style = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/UnityLightsAuditTool/Editor/Resources/UnityLightsAuditTool.uss");
+            if (style == null)
+            {
+                style = AssetDatabase.LoadAssetAtPath<StyleSheet>("Packages/com.razluta.unitylightsaudittool/Editor/Resources/UnityLightsAuditTool.uss");
+            }
+            rootVisualElement.styleSheets.Add(style);
+            
             // Find / query elements
             _realtimeTg = rootVisualElement.Q<Toggle>("Tg_Realtime");
             _mixedTg = rootVisualElement.Q<Toggle>("Tg_Mixed");
