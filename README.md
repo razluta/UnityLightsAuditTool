@@ -31,8 +31,8 @@ The tool is a utility for Unity game developers that helps analyze, sort and dis
 To use the Unity Lights Auditor Tool in your Unity project, simply:
 
 ### Option A) Clone or download the repository and drop it in your Unity project.
-1. Clone or download the repository
-2. Import the `UnityLightsAuditorTool` folder into your Unity project's `Assets` folder
+1. Clone or [download](https://github.com/razluta/UnityLightsAuditTool/releases) the repository
+2. Import the `UnityLightsAuditorTool` folder into your Unity project's `Assets` folder.
 
 ### Option B) Add the repository to the package manifest (go in YourProject/Packages/ and open the "manifest.json" file and add "com..." line in the depenencies section). If you don't have Git installed, Unity will require you to install it.
 ```
