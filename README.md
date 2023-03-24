@@ -7,6 +7,8 @@ This repository is a Unity Editor tool for auditing all the lights in your Unity
 The tool has been verified on the following versions of Unity:
 - 2021.3 (LTS)
 
+For more version support, please see the [currently open issues here](https://github.com/razluta/UnityLightsAuditTool/issues).
+
 *  *  *  *  *
 
 The tool is a utility for Unity game developers that helps analyze, sort and display data about all the lights in the scene(s).
